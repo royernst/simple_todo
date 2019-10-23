@@ -1,0 +1,113 @@
+body {
+    background-color: #87240F;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+#img_container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 25px auto 0px;
+}
+
+#form_container {
+    position: absolute;
+    background-color: #FFF6E5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#form_title_box {
+    width: 100%;
+    height: 75px;
+    text-align: center;
+}
+
+#form_title_box>h3 {
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+#form_body {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+#new_item {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: cursive, sans-serif;
+    vertical-align: middle;
+    outline: none;
+}
+
+#new_item:focus {
+    background: rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+#list_items {
+    text-align: left;
+    font-family: cursive, sans-serif;
+    padding: 0px 10px 10px;
+}
+
+#list_items li {
+    list-style: none;
+    line-height: 22px;
+    font-size: 20px;
+    position: relative;
+}
+
+.list_text {
+    text-align: left;
+    cursor: pointer;
+}
+
+.list_text.completed {
+    text-decoration: line-through;
+}
+
+.list_text .checkbox {
+    float: left;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox.unchecked::after {
+    content: "\2610";
+}
+
+.checkbox.checked::after {
+    content: "\2611";
+}
+
+.delete {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+}
+
+.checkbox,
+.list_text,
+.delete:hover {
+    cursor: pointer;
+}

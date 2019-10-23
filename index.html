@@ -1,0 +1,31 @@
+<!-- This is an unresponsive static HTML site built as a simple, non-persistent "todo" list -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Todo</title>
+    <link rel="stylesheet" type="text/css" href="./lib/styles/style.css">
+</head>
+
+<body>
+    <form id="form_container">
+        <div id="img_container">
+            <img src="lib/media/iconfinder_notepad_2_42282.png" />
+        </div>
+        <div id="form_title_box">
+            <h3>Simple Todo</h3>
+        </div>
+        <div id="form_body">
+            <label for="new_item">TO DO:</label>
+            <input type="text" id="new_item" name="new_item" placeholder="Add new item" size="30" spellcheck="true" enterkeyhint="send" required>
+            <button type="submit" id="submit_button" autocomplete="off" disabled>+</button>
+        </div>
+        <div id="list_items">
+            <ul id="list_body">
+            </ul>
+        </div>
+    </form>
+    <script src="./lib/scripts/script.js"></script>
+</body>
+
+</html>
